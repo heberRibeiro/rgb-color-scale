@@ -7,6 +7,25 @@
     <title>RGB Color Scale</title>
   </head>
   <body>
+    <div id="red">
+      <label for="red-range" id="red-label">(R) Vermelho:</label>
+      <input type="range" name="red-range" id="red-range" min="0" max="255" />
+      <input type="text" name="red-text" id="red-text" />
+    </div>
+    <!--prettier-ignore-->
+    <div id="green">
+      <label for="green-range" id="green-label">(G) Verde:</label>
+      <input type="range" name="green-range" id="green-range" min="0" max="255" />
+      <input type="text" name="green-text" id="green-text" />
+    </div>
+    <div id="blue">
+      <label for="blue-range" id="blue-label">(B) Azul:</label>
+      <input type="range" name="blue-range" id="blue-range" min="0" max="255" />
+      <input type="text" name="blue-text" id="blue-text" />
+    </div>
+
+    <div id="scale-color"></div>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
