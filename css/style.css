@@ -1,5 +1,8 @@
 #scale-color {
   width: 100px;
   height: 100px;
-  background-color: aqua;
+}
+
+.rgb-color {
+  background-color: rgb(12, 23, 34);
 }

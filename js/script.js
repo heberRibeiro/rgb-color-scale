@@ -9,6 +9,8 @@ function start() {
   var greenText = document.querySelector('#green-text');
   var blueText = document.querySelector('#blue-text');
 
+  var divColor = document.querySelector('#scale-color');
+
   redRange.addEventListener('input', rangeChange);
   greenRange.addEventListener('input', rangeChange);
   blueRange.addEventListener('input', rangeChange);
@@ -58,7 +60,6 @@ function start() {
         var blueTextValue = event.target.value;
         blueRange.value = blueTextValue;
         break;
-
       default:
         break;
     }
