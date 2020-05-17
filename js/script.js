@@ -13,6 +13,10 @@ function start() {
   greenRange.addEventListener('input', rangeChange);
   blueRange.addEventListener('input', rangeChange);
 
+  redText.addEventListener('input', textChange);
+  greenText.addEventListener('input', textChange);
+  blueText.addEventListener('input', textChange);
+
   function rangeChange(event) {
     /**
      * Identifies which input range has changed by capturing the element id,
@@ -31,6 +35,30 @@ function start() {
         var blueRangeValue = event.target.value;
         blueText.value = blueRangeValue;
         break;
+      default:
+        break;
+    }
+  }
+
+  function textChange(event) {
+    /**
+     * Identifies which input text has changed by capturing the element id,
+     * from there it assigns the value of the text to the input range.
+     */
+    switch (event.target.id) {
+      case 'red-text':
+        var redTextValue = event.target.value;
+        redRange.value = redTextValue;
+        break;
+      case 'green-text':
+        var greenTextValue = event.target.value;
+        greenRange.value = greenTextValue;
+        break;
+      case 'blue-text':
+        var blueTextValue = event.target.value;
+        blueRange.value = blueTextValue;
+        break;
+
       default:
         break;
     }
