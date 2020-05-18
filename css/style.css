@@ -1,4 +1,43 @@
+* {
+  margin: 0;
+}
+
+#root {
+  width: 35vw;
+  margin: 4px;
+}
+
+#red,
+#green,
+#blue {
+  margin: 2px;
+}
+
+label {
+  width: 100px;
+  height: 21px;
+  margin: 2px;
+  display: inline-block;
+}
+
+#red-range,
+#green-range,
+#blue-range {
+  margin: 2px;
+  vertical-align: middle;
+}
+
+#red-text,
+#green-text,
+#blue-text {
+  width: 50px;
+  margin: 2px;
+  vertical-align: middle;
+}
+
 #scale-color {
   width: 100px;
   height: 100px;
+  margin-top: 5px;
+  margin-left: 10vw;
 }
