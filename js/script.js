@@ -11,6 +11,10 @@ function start() {
 
   var divColor = document.querySelector('#scale-color');
 
+  redText.value = redRange.value;
+  greenText.value = greenRange.value;
+  blueText.value = blueRange.value;
+
   redRange.addEventListener('input', rangeChange);
   greenRange.addEventListener('input', rangeChange);
   blueRange.addEventListener('input', rangeChange);
@@ -18,6 +22,8 @@ function start() {
   redText.addEventListener('input', textChange);
   greenText.addEventListener('input', textChange);
   blueText.addEventListener('input', textChange);
+
+  colorChange();
 
   function rangeChange(event) {
     /**
@@ -40,6 +46,7 @@ function start() {
       default:
         break;
     }
+    colorChange();
   }
 
   function textChange(event) {
@@ -63,5 +70,14 @@ function start() {
       default:
         break;
     }
+    colorChange();
+  }
+
+  function colorChange() {
+    divColor.style.backgroundColor = `rgb( 
+      ${redRange.value},
+      ${greenRange.value},
+      ${blueRange.value}
+      )`;
   }
 }
